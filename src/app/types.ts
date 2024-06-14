@@ -18,3 +18,6 @@ export interface SearchResponse {
   }
   
   export type Status = "Canceled/Ended" | "Ended" | "Running" | "New Series" | "To Be Determined";
+
+  export type TvShowId = TvShow['id']; // This is better than number
+  export type TvShowIds = Array<TvShowId>; // This is easier to read
